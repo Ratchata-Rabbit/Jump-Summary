@@ -13,14 +13,14 @@ Claude Code อ่าน personal skills จาก `~/.claude/skills/<ชื่�
 
 **macOS / Linux / Git Bash**
 ```bash
-git clone https://github.com/<your-user>/claude-skills.git
+git clone https://github.com/Ratchata-Rabbit/claude-skills.git
 mkdir -p ~/.claude/skills
 cp -r claude-skills/handoff claude-skills/html ~/.claude/skills/
 ```
 
 **Windows PowerShell**
 ```powershell
-git clone https://github.com/<your-user>/claude-skills.git
+git clone https://github.com/Ratchata-Rabbit/claude-skills.git
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
 Copy-Item -Recurse claude-skills\handoff, claude-skills\html "$env:USERPROFILE\.claude\skills\"
 ```
