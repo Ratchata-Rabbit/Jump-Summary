@@ -22,7 +22,7 @@ cp -r Jump-Summary/handoff Jump-Summary/html ~/.claude/skills/
 ```powershell
 git clone https://github.com/Ratchata-Rabbit/Jump-Summary.git
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
-Copy-Item -Recurse claude-skills\handoff, claude-skills\html "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse Jump-Summary\handoff, Jump-Summary\html "$env:USERPROFILE\.claude\skills\"
 ```
 
 เปิด Claude Code ใหม่ แล้วพิมพ์ `/handoff` หรือ `/html`
@@ -31,7 +31,7 @@ Copy-Item -Recurse claude-skills\handoff, claude-skills\html "$env:USERPROFILE\.
 
 ## โครงสร้าง
 ```
-claude-skills/
+Jump-Summary/
 ├── README.md            ← ไฟล์นี้
 ├── handoff/
 │   ├── SKILL.md         ← คำสั่งที่ Claude อ่าน (frontmatter name/description + ขั้นตอน)
